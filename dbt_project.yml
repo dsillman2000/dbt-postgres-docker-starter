@@ -1,0 +1,12 @@
+name: postgres_playground
+version: 1.0.0
+profile: postgres_playground
+
+model-paths: ["models"]
+
+clean-targets: ["target", "logs", "dbt_packages"]
+
+models:
+  postgres_playground:
+    staging:
+      +schema: staging
